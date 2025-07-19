@@ -316,8 +316,8 @@ body.transitioned .top-right-content {
   white-space: nowrap;
   box-sizing: border-box;
   font-size: 32px;
-  font-weight: 400;
-  font-family: "Nunito", Regular;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
   color: #fff;
   margin-bottom: 1rem;
   user-select: none;
