@@ -388,7 +388,7 @@ body.transitioned .top-right-content {
 }
 
  .right-text {
-   width:1400px;
+   width:1240px;
   height: 100vh;
   transform: translate(-16%, 0%) ;
   display: flex;
@@ -2112,6 +2112,7 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
 
 
