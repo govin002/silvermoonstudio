@@ -372,7 +372,7 @@ body.transitioned .top-right-content {
 
 /* Right part - Text Content */
 .right {
-  width:50%;
+  width:56%;
   height: 100vh;
   position: relative;
   margin-left: 5rem;
@@ -389,7 +389,7 @@ body.transitioned .top-right-content {
 }
 
  .right-text {
-   width:1300px;
+  width:1400px;
   height: 100vh;
   transform: translate(-16%, 0%) ;
   display: flex;
@@ -415,7 +415,7 @@ body.transitioned .top-right-content {
 
 /* Paragraph */
 .right-content p {
-  width: 800px;
+  width: 900px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
   font-size: 1vw;
@@ -2113,6 +2113,7 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
 
 
