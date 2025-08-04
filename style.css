@@ -368,17 +368,16 @@ body.transitioned .top-right-content {
   position: absolute;
   margin: 2rem 4rem;
 }
+
+
 /* Right part - Text Content */
 .right {
-  width: 50%;
+  width:50%;
   height: 100vh;
   position: relative;
   margin-left: 5rem;
-  display: flex;
-  align-items: center; /* vertical centering */
 }
 
-/* Vertical Gradient Line */
 .gradient-line-vertical {
   position: absolute;
   top: 16vw;
@@ -389,56 +388,58 @@ body.transitioned .top-right-content {
   border-radius: 4px;
 }
 
-/* Container for Text */
-.right-text {
-  max-width: 90%;
-  padding-right: 2rem;
-  color: white;
+ .right-text {
+   width:1300px;
+  height: 100vh;
+  transform: translate(-16%, 0%) ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-10%);
+  padding-right: 2rem;
+  color: white;
 }
+ 
 
-/* Heading Styling */
-.right-text h1 {
+
+
+/* About Us Heading */
+
+.right-content h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: clamp(2rem, 3.333vw, 4rem);
+  font-size: 3.333vw;
   margin-bottom: 1.6rem;
   color: white;
   line-height: 1.2;
 }
 
-/* Paragraph Styling with Gradient Reveal */
-.right-text p {
-  max-width: 800px;
+/* Paragraph */
+.right-content p {
+  width: 800px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: 1vw;
   line-height: 1.6;
   margin-bottom: 1.2rem;
   padding-bottom: 1.2rem;
-
-  background: linear-gradient(to right, #fff 50%, #252525 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: transparent;
+  background: linear-gradient(to right, #fff 50%, #252525 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-/* Optional: Add animation class to reveal lines */
 .line-reveal {
+  display: block;
   background: linear-gradient(to right, #fff 50%, #252525 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
+}   
+/*--------------------section two ends here ------------  */
 /* ---------------section  Three -------------------------*/
 
 .section-three {
@@ -2112,6 +2113,7 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
 
 
