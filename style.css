@@ -358,7 +358,7 @@ body.transitioned .top-right-content {
   position: relative;
 }
 .left-moon {
-  width: 100%;
+  width: 90%;
   height: 90%;
   transform: translate(14%, 0%) scale(1.2);
   background-image: url("assets/images/bgmoon2.png");
@@ -371,10 +371,10 @@ body.transitioned .top-right-content {
 
 /* Right part - Text Content */
 .right {
-  width: 60%;
+  width:50%;
   height: 100vh;
   position: relative;
-  /* margin-left: 18rem; */
+  margin-left: 5rem;
 }
 
 .gradient-line-vertical {
@@ -387,16 +387,19 @@ body.transitioned .top-right-content {
   border-radius: 4px;
 }
 
-.right-text {
-  width: 100%;
+ .right-text {
+   width:1200px;
   height: 100vh;
-  transform: translate(-10%, 0%) scale(1);
+  transform: translate(-16%, 0%) ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 2rem;
   color: white;
 }
+ 
+
+
 
 /* About Us Heading */
 
@@ -411,8 +414,7 @@ body.transitioned .top-right-content {
 
 /* Paragraph */
 .right-content p {
-  max-width: 793px;
-  width: 100%;
+  width: 800px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
   font-size: 1vw;
@@ -2110,4 +2112,5 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
