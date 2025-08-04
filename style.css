@@ -371,7 +371,7 @@ body.transitioned .top-right-content {
 
 /* Right part - Text Content */
 .right {
-  width: 58%;
+  width: 60%;
   height: 100vh;
   position: relative;
   /* margin-left: 18rem; */
@@ -2110,3 +2110,4 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
