@@ -608,39 +608,35 @@ body.transitioned .top-right-content {
   z-index: 1;
 }
 
-/*-------- section four */
+/*-------- section four --------*/
 .section-four {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 5rem 0 5rem 0;
-}
-.services-section {
-  padding: 30px 20px;
   color: white;
-  background-color: transparent;
+}
+
+.section-four {
+  padding: 5rem 0;
+  color: white;
 }
 
 .services-title {
-  color: white;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
   font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-size: 4rem;
-  text-align: left;
-  max-width: 1200px;
-  margin: 0 0 20px 0;
-  padding-left: 18px;
-  padding-bottom: 3rem;
+  font-weight: 600;
+  font-size: 3.333vw;
+  margin-bottom: 1.6rem;
+  color: white;
+  line-height: 1.2;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
 }
 
+/* Desktop grid */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   padding: 30px;
 }
@@ -651,31 +647,33 @@ body.transitioned .top-right-content {
   background: #1b1b1b80;
   border: 0.5px solid #4e4e4e;
   border-radius: 15px;
-  padding: 25px;
+  padding: 24px;
   color: white;
   transition: all 0.4s ease;
-  max-height: 300px;
+  width: 100%;
+  max-height: 164px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
+  box-sizing: border-box;
 }
 
-/* Glowing vertical bar */
 .service-card::before {
   content: "";
   position: absolute;
-  left: -15px; /* pushed outside the card a bit */
+  left: -15px;
   top: 20px;
   width: 25px;
-  height: 120px;
+  height: 140px;
   background: linear-gradient(to bottom, #48c9ff, rgba(0, 0, 0, 0));
   border-radius: 10px;
   filter: blur(1px) brightness(0.8);
   opacity: 1;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 12; /* behind content */
+  z-index: 12;
 }
 
-/* Hide it on hover */
 .service-card:hover::before {
   opacity: 0;
   transform: translateX(-10px);
@@ -689,25 +687,30 @@ body.transitioned .top-right-content {
 }
 
 .service-card img {
-  width: 40px;
-  margin-bottom: 20px;
+  width: 55px;
+  margin-left: 2rem;
+  vertical-align: middle;
 }
 
 .service-card h3 {
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
+  font-family: "Nunito", sans;
+  font-weight: 600;
+  font-size: 1.25rem;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 2rem;
+  display: inline-block;
 }
 
 .service-card p {
   font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+  margin-left: 2rem;
 }
 
-/* Hidden long description */
 .service-card .more-description {
   max-height: 0;
   opacity: 0;
@@ -715,12 +718,89 @@ body.transitioned .top-right-content {
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-/* Reveal on hover */
 .service-card:hover .more-description {
   max-height: 300px;
   opacity: 1;
   transition-delay: 0.2s;
 }
+
+/* Hide mobile slider on desktop */
+.mobile-slider {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .service-card {
+    margin-bottom: 20px;
+  }
+  .service-card:hover {
+    transform: rotate(0deg);
+    max-height: 500px;
+    background: linear-gradient(145deg, #090909, #1052cc);
+    box-shadow: 0 0 25px #1052cc88, inset 0 0 30px #0d3c8b;
+    gap: 20px;
+  }
+
+  /* Hide desktop grid on tablets & below */
+  .services-grid {
+    display: none;
+  }
+
+  /* Show mobile slider */
+  .mobile-slider {
+    display: block;
+    padding: 1rem;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Swiper container padding for bottom pagination */
+  .swiper {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* Pagination styling */
+  .swiper-pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #efeff0;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+  }
+
+  /* Page indicator text */
+  .page-indicator {
+    text-align: center;
+    color: #efeff0;
+    font-size: 16px;
+    margin-top: 24px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  /* Stack cards vertically inside each swiper-slide */
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .swiper-slide .service-card {
+    width: 98% !important;
+    max-height: none !important;
+  }
+}
+
+/* ------------------section four ends----------- */
 
 /* Section Five - Core Values */
 
@@ -2040,7 +2120,7 @@ body.transitioned .top-right-content {
     display: block;
   }
 
-  /* section nine ________________ */
+  /* -----section nine ________________ */
 
   .contact-title {
     font-size: 2.5rem;
@@ -2113,6 +2193,7 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
 
 
