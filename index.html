@@ -954,7 +954,7 @@
         stagger: { each: 0.1, from: "start" },
         scrollTrigger: {
           trigger: p,
-          start: "top 80%",
+          start: "top 40%",
           end: "bottom 20%",
           toggleActions: "play none reverse none",
           // markers: true
@@ -977,7 +977,7 @@
         stagger: { each: 0.1 },
         scrollTrigger: {
           trigger: p,
-          start: "top 80%",
+          start: "top 40%",
           end: "bottom 20%",
           toggleActions: "play none reverse none",
           // markers: true
@@ -1000,7 +1000,7 @@
         stagger: { each: 0.1 },
         scrollTrigger: {
           trigger: p,
-          start: "top 80%",
+          start: "top 40%",
           end: "bottom 20%",
           toggleActions: "play none reverse none",
           // markers: true
@@ -1010,103 +1010,32 @@
   });
 </script>
 
-
-<!-- <script>
-    gsap.registerPlugin(ScrollTrigger);
-const paragraphs = document.querySelectorAll(".right-content > p");
-
-paragraphs.forEach((p) => {
-  const split = new SplitText(p, {
-    type: "lines",
-    linesClass: "line-reveal"
-  });
-
-  gsap.fromTo(
-    split.lines,
-    { backgroundPosition: "100% 0" },
-    {
-      backgroundPosition: "0% 0",
-      ease: "power2.out",
-      duration: 1,
-      stagger: {
-        each: 0.3,
-        from: "start"
-      },
-      scrollTrigger: {
-        trigger: p,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none reverse none",
-        markers: true
-      }
-    }
-  );
-});
-
-</script>
-<script>
-  //section three
-
-
-  // Target each paragraph separately
-   const paragraph = document.querySelectorAll(".section-subtitle");
-
-   paragrap.forEach((p) => {
-  
-  const split = new SplitText(p, {
-    type: "lines",
-    linesClass: "line-reveal"
-  });
-
- 
-  gsap.to(split.lines, {
-    backgroundPositionX: "0%",
-    ease: "power2.out",
-    duration: 2,
-    stagger: 0.15,
-    scrollTrigger: {
-      trigger: p,
-      start: "top 40%",
-      end: "bottom 60%",
-      toggleActions: "play none none none",
-      scrub: true,
-       markers: true 
-    }
-  });
-  });
-</script>
-<script>
-    //section three
-
-  
-    // Target each paragraph separately
-    const paragrap = document.querySelectorAll(".value-content");
-  
-    paragrap.forEach((p) => {
-  
-      const split = new SplitText(p, {
-        type: "lines",
-        linesClass: "line-reveal"
-      });
-  
-     
-      gsap.to(split.lines, {
-        backgroundPositionX: "0%",
-        ease: "power2.out",
-        duration: 2,
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: p,
-          start: "top 40%",
-          end: "bottom 60%",
-          toggleActions: "play none none none",
-          scrub: true,
-           markers: true 
-        }
-      });
-    });
-</script>
-  -->
+<!-- section four services card -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+   const swiper = new Swiper('.swiper', {
+     slidesPerView: 1, // one grouped slide per page
+     spaceBetween: 20,
+     pagination: {
+       el: '.swiper-pagination',
+      
+       clickable: true,
+     },
+     on: {
+       slideChange: function () {
+         const current = this.realIndex + 1;
+         const totalPages = this.slides.length;
+         document.getElementById('page-indicator').innerText = `Page ${current} out of 3`;
+       },
+       init: function () {
+         const current = this.realIndex + 1;
+         const totalPages = this.slides.length;
+         document.getElementById('page-indicator').innerText = `Page ${current} out of 3`;
+       }
+     }
+   });
+ </script>
+<!-- section four js-->
    <script src="script.js"></script>
     <script src="scrollct.js"></script>
     <script src="caardsuf.js"></script>
@@ -1116,6 +1045,7 @@ paragraphs.forEach((p) => {
   
   </body>
 </html>
+
 
 
 
