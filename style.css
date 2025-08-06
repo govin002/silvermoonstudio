@@ -770,25 +770,27 @@ body.transitioned .top-right-content {
     margin-bottom: 20px;
   }
 
-  .swiper-pagination-bullet {
-    background: #efeff0;
+ .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: #efeff0 !important;
+    border-radius: 50%;
+    margin: 0 6px;
     opacity: 1;
   }
 
   .swiper-pagination-bullet-active {
-    background: white;
-    opacity: 1;
+    background: #48c9ff !important; /* active dot color */
   }
 
   /* Page indicator text */
   .page-indicator {
     text-align: center;
-    color: #efeff0;
+    color: #615f5f !important;
     font-size: 16px;
     margin-top: 24px;
     font-family: "Nunito", sans-serif;
   }
-
   /* Stack cards vertically inside each swiper-slide */
   .swiper-slide {
     display: flex;
@@ -2199,3 +2201,4 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
