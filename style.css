@@ -503,7 +503,7 @@ body.transitioned .top-right-content {
   display: flex;
   flex-direction: row;
   gap: 4rem;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -2201,4 +2201,5 @@ body.transitioned .top-right-content {
     padding: 0 0.5rem;
   }
 }
+
 
